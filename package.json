@@ -1,0 +1,20 @@
+{
+  "name": "copy-slack-emoji",
+  "description": "A browser extension that automatically converts Slack emoji shortcodes to actual emojis when copying text from Slack.",
+  "main": "dist/content.js",
+  "author": "ThanosDi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThanosDi/copy-slack-emoji.git"
+  },
+  "homepage": "https://github.com/ThanosDi/copy-slack-emoji",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.1",
+    "typescript": "^5.8.3"
+  }
+}

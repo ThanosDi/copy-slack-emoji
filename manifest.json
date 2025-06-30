@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Slack Emoji",
+  "version": "1.0",
+  "description": "Replaces Slack emoji shortcodes with actual emojis on copy.",
+  "content_scripts": [
+    {
+      "matches": ["https://app.slack.com/*"],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/emojies.json"],
+      "matches": ["https://app.slack.com/*"]
+    }
+  ],
+  "permissions": ["clipboardWrite"]
+}
